@@ -1,0 +1,220 @@
+/* Home.css */
+
+.HomePage {
+  /* border: solid 1px black; */
+  }
+  
+  .HomePage_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+  }
+  
+  .HomePage_Logo {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .HomePage_Logout {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .HomePage_Logout:hover {
+    text-decoration: underline;
+  }
+  
+  .HomePage_UserTable {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .HomePage_TableTitle_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .HomePage_TableTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .HomePage_TableAddUser {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .HomePage_TableAddUser:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the entire table container */
+  .HomePage_TableContainer {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  /* Blade CSS Start */
+.Blade_AddUser {
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    border: 2px  black;
+    background: rgb(255, 255, 255);
+  
+    animation-name: menuSlide;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+
+  }
+  
+  @keyframes menuSlide {
+    from {
+      filter: opacity(0%);
+      transform: translateX(80%);
+    }
+  
+    to {
+      filter: opacity(60%);
+      transform: translateX(0%);
+    }
+  }
+
+
+
+  /* Styling for the Blade content */
+  .Blade_Title {
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .Blade_Title h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  /* Styling for the close button */
+  .Blade_Title i {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .Blade_AddUserInput {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    border-radius: 0 0 5px 5px;
+    width: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+  }
+  
+  /* Styling for form labels */
+  .Blade_AddUserInput label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for input fields */
+  .Blade_input {
+    width: 12rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styling for buttons */
+  .Blade_AddUserInput button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .Blade_AddUserInput button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for error messages */
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Styling for the list of new users */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for the "Save" and "Cancel" buttons */
+  .Blade_AddUserInput > div > button {
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .Blade_AddUserInput > div > button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .Blade_AddUserInput > div > button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .Blade_AddUser {
+      padding: 10px;
+    }
+    
+    .Blade_AddUserInput {
+      padding: 10px;
+    }
+    
+    .Blade_AddUserInput button {
+      font-size: 14px;
+    }
+    
+
+  }
+  

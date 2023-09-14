@@ -1,0 +1,54 @@
+/* Login Page */
+.LoginPage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* header Title */
+.LoginPage_Header{
+    font-size: xx-large;
+    
+}
+
+.LoginPage_errorMessage{
+    border: "solid 1px red";
+    
+}
+/* LoginPage.css */
+
+.LoginPage_Form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .Page_label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .Page_input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit_Button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit_Button:hover {
+    background-color: #0056b3;
+  }
+  
