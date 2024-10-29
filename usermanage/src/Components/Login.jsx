@@ -8,8 +8,8 @@ function Login() {
 
     const navigate = useNavigate()
   const [loginData, setLoginData] = useState({
-    email: '',
-    password: ''
+    email: 'ashish@gmail.com',
+    password: '123456'
   });
   const [error, setError] = useState('');
 
@@ -30,13 +30,13 @@ function Login() {
 
     try {
       // Make an API request using Axios
-      const response = await axios.post('https://vinoapi.winayak.com/api/login', loginData);
+      // const response = await axios.post('https://vinoapi.winayak.com/api/login', loginData);
 
-      // Handle the API response here
-      console.log('API Response:', response.data.access_token);
+      // // Handle the API response here
+      // console.log('API Response:', response.data.access_token);
         
-      Cookies.set("token", response?.data?.access_token)
-      Cookies.set("status", response?.data?.status) 
+      Cookies.set("token", "response?.data?.access_token")
+      Cookies.set("status", true) 
       navigate("/")
     } catch (error) {
       setError('Login failed. Please check your credentials.');
